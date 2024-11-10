@@ -1,0 +1,76 @@
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 10px;
+}
+
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    border: none;
+    padding: 10px;
+    width: calc(100% - 60px);
+}
+
+#send-button {
+    width: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #dcf8c6;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+.chatbot-message {
+    text-align: left;
+    background-color: #e8e8e8;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    max-width: 80%;
+    align-self: flex-start;
+}
+/* Estilo para los mensajes */
+.user-message {
+    color: blue;
+}
+
+.chatbot-message {
+    color: green;
+}
+
+/* Estilo para el indicador de carga */
+#messages .chatbot-message:last-child {
+    font-style: italic;
+    color: gray;
+}
